@@ -2,7 +2,7 @@
 
 1. 📖 Contexto y Problema Actual
 
-    El actual proyecto se basa en el aáalisis de un conjunto de datos que nos proporciona una empresa en la que su canal comercial quiere conocer el estado de sus ventas en los últimos dos años para poder trazar una estratégia dedicada al crecimiento de las mismas. Para ello realizaremos un EDA (Ánalisis exploratorio del dato) en el cual buscaremos tendencias de crecimento/decrecimento, tipologias de producto con mayor índice de venta, anulaciones y sus motivos, etc. Antes de realizar objeto principal de este proyecto, deberemos realizar una ETA (Extracción, Transformación y Carga de los Datos) en la cual en primer lugar cifraremos los datos sensibles para la protección y privacidad, estudiaremos la validez y coheréncia de los datos, por último realizaremos la carga en nuestro archivo para el ánalisis.
+    El actual proyecto se basa en el análisis de un conjunto de datos que nos proporciona una empresa en la que su canal comercial quiere conocer el estado de sus ventas en los últimos dos años para poder trazar una estratégia dedicada al crecimiento de las mismas. Para ello realizaremos un EDA (Ánalisis exploratorio del dato) en el cual buscaremos tendencias de crecimento/decrecimento, tipologias de producto con mayor índice de venta, anulaciones y sus motivos, etc. Antes de realizar objeto principal de este proyecto, deberemos realizar una ETA (Extracción, Transformación y Carga de los Datos) en la cual en primer lugar cifraremos los datos sensibles para la protección y privacidad, estudiaremos la validez y coheréncia de los datos, por último realizaremos la carga en nuestro archivo para el ánalisis.
 
 2. 🎯 Objetivos
 
@@ -76,10 +76,8 @@
     - Proveedor_validez_dato: Texto que indica la validez del valor que toma el campo "Proveedor".
     - Anulada_validez_dato: Texto que indica la validez del valor que toma el campo "Anulada".
     - Antelacion_pedido_dias: Número entero que indica la diferencia de dias entre Fecha_servicio" y "Fecha_pedido".
-    - Antelacipn_pedido_meses: Número decimal que indica la diferencia de meses entre "Fecha_servicio" y "Fecha_pedido".
     - Antelacion_pedido_validez_dato: Texto que indica si el valor de la medida esta dentro de un rango coherente devolviendo "Dato_valido" o devolviendo la casuistica del error en su defecto.
     - Tiempo_entrega_dias: Número entero que indica la diferencia de dias entre "Fecha_recepcion" y "Fecha_pedido".
-    - Tiempo_entrega_meses: Número decimal que indica la diferencia de meses entre "Fecha_recepcion" y "Fecha_pedido".
     - Tiempo_preparacion_real: Número entero que indica la diferencia de dias entre "Fecha_albaran" y "Fecha_recepcion".
     - Tiempo_preparacion_real_validez_dato: Texto que indica si el valor de la medida esta dentro de un rango coherente devolviendo "Dato_valido" o devolviendo la casuistica del error en su defecto.
     - Tiempo_preparacion_disponible: Número entero que indica la diferencia de dias entre "Fecha_servicio" y "Fecha_recepcion".
@@ -91,12 +89,12 @@
     SESION 1:
 
     - Creación repositorio GitHub.
-    - Generación archivos Readme y gitignore (para que no aparezcan los datos originales).
+    - Generación archivos Readme y gitignore (protección datos originales).
     - ETL:
         - Extracción y cifrado de los datos originales (Datos_originales_cifrados.xlsx).
         - Transformación de los datos y creación archivo Datos_transformados, en el creamos nuevos campos calculados (medidas) y analizamos la validez de cada uno de los registros (linias).
         - Exportación de los datos ya transformados a csv (csv_datos_transformados.csv).
-        - Carga y creación archivo para el analisis (EDA.xlsx), confirmamos con Power Query los tipos de datos (texto, calendiario, numericos: entero o decimal) por campo.
+        - Carga y creación archivo para el analisis (EDA.xlsx), confirmamos con Power Query los tipos de datos (texto, calendiario, numericos: entero o decimal) por campo y filtramos en "Validez_registro" por "Registro_erroneo".
     - Comprimir archivo Datos_transformados por su peso superor a 100 MB.     
 
     SESION 2:
