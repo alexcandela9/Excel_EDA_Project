@@ -99,7 +99,8 @@
 
     SESION 2:
 
-    - 
+    - Analisis estadístico descriptivo de los campos númericos.
+
 
 
 
