@@ -49,7 +49,7 @@
     - Clase_pedido: Texto que indica desde que área se ha realizado el pedido. Siendo "Pedido Inicial WH" los pedidos realizados por clientes externos a la empresa y "Pedido Reserva Plan" los realizados internamente para stock.
     - Fecha_pedido: Fecha que indica el dia que se realizó el pedido.
     - Fecha_servicio: Fecha que indica el dia para el cual se necesita servir el pedido.
-    - Area_ventas: Texto que indica para que área del mundo se ha realizado el pedido. Siendo "USCA" para la zona de Estados Unidos y Cánada, "LATM" para la zona de Latino Ámerica, "IBLA" para España, "EMEA" para Europa excepto España y Asia occidental y "ASIA" para la zona mas oriental del contiente Asiático.
+    - Area_ventas: Texto que indica para que área del mundo se ha realizado el pedido. Siendo "USCA" para la zona de Estados Unidos y Cánada, "LATM" para la zona de Latino Ámerica, "IBLA" para España, "EMEA" para Europa y Asia occidental y "ASIA" para la zona mas oriental del contiente Asiático.
     - Pais_cliente: Texto que indica el pais del cliente.
     - Cliente: Texto que indica el nombre del cliente, en este caso codificado.
     
@@ -99,11 +99,17 @@
 
     SESION 2:
 
-    - Analisis estadístico descriptivo de los campos númericos.
+    - Análisis estadístico descriptivo de los campos númericos.
+    - Análisis de los campos categóricos.
+
+
+6. 🔚 Conclusiones.
+
+    - Análisis descriptivo númericos:
+    - Análisis categóricas:
 
 
 
-
-6. ✒️ Autor
+7. ✒️ Autor
 
     - Álex Candela Asencio
