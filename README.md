@@ -2,13 +2,13 @@
 
 1. 📖 Contexto y Problema Actual
 
-    El actual proyecto se basa en el análisis de un conjunto de datos que nos proporciona una empresa en la que su canal comercial quiere conocer el estado de sus ventas en los últimos dos años para poder trazar una estratégia dedicada al crecimiento de las mismas. Para ello realizaremos un EDA (Ánalisis exploratorio del dato) en el cual buscaremos tendencias de crecimento/decrecimento, tipologias de producto con mayor índice de venta, anulaciones y sus motivos, etc. Antes de realizar objeto principal de este proyecto, deberemos realizar una ETA (Extracción, Transformación y Carga de los Datos) en la cual en primer lugar cifraremos los datos sensibles para la protección y privacidad, estudiaremos la validez y coheréncia de los datos, por último realizaremos la carga en nuestro archivo para el ánalisis.
+    El actual proyecto se basa en el análisis de un conjunto de datos que nos proporciona una empresa en la que su canal comercial quiere conocer el estado de sus ventas en los últimos dos años para poder trazar una estratégia de mejora en el serivio de las mismas para no perder crecimiento. Para ello realizaremos un EDA (Ánalisis exploratorio del dato) en el cual buscaremos tendencias de cumplimiento/incumplimiento del servicio, tipologias de producto con mayor índice de venta, anulaciones y sus motivos, etc. Antes de realizar objeto principal de este proyecto, deberemos realizar una ETA (Extracción, Transformación y Carga de los Datos) en la cual en primer lugar cifraremos los datos sensibles para la protección y privacidad, estudiaremos la validez y coheréncia de los datos, por último realizaremos la carga en nuestro archivo para el ánalisis.
 
 2. 🎯 Objetivos
 
     El objetivo principal de este proyecto es crear uno o mas Dashboard interactivos que faciliten la visualización de los datos y proporcionen insights que ayuden a la toma de decisiones estratégicas.Los insights proporcionarán:
 
-    - Tendencias de venta.
+    - Cumplimiento del servicio.
     - Tasa de anulación de pedidos.
     - Productos y tipologias de producto con mayor venta.
 
@@ -86,7 +86,7 @@
 
 5. 🔄 Recap sesiones.
 
-    SESION 1:
+    SESIÓN 1:
 
     - Creación repositorio GitHub.
     - Generación archivos Readme y gitignore (protección datos originales).
@@ -97,16 +97,26 @@
         - Carga y creación archivo para el analisis (EDA.xlsx), confirmamos con Power Query los tipos de datos (texto, calendiario, numericos: entero o decimal) por campo y filtramos en "Validez_registro" por "Registro_erroneo".
     - Comprimir archivo Datos_transformados por su peso superor a 100 MB.     
 
-    SESION 2:
+    SESIÓN 2:
 
     - Análisis estadístico descriptivo de los campos númericos.
     - Análisis de los campos categóricos.
+    - Análisis de los campos temporales.
+    - Análisis multifactorial.
+    - Análisis relacional.
+
+    SESIÓN 3:
+
+    - Creación DashBoard.
 
 
 6. 🔚 Conclusiones.
 
     - Análisis descriptivo númericos:
     - Análisis categóricas:
+    - Análisis temporales:
+    - Análisis multifactorial:
+    - Análisis relacional:
 
 
 
