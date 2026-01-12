@@ -6,9 +6,9 @@
 
 2. 🎯 Objetivos
 
-    El objetivo principal de este proyecto es crear uno o mas Dashboard interactivos que faciliten la visualización de los datos y proporcionen insights que ayuden a la toma de decisiones estratégicas.Los insights proporcionarán:
+    El objetivo principal de este proyecto es crear uno o mas Dashboard interactivos que faciliten la visualización de los datos y proporcionen insights que ayuden a la toma de decisiones estratégicas. Los insights proporcionarán:
 
-    - Cumplimiento del servicio.
+    - Cumplimiento del servicio (principal).
     - Tasa de anulación de pedidos.
     - Productos y tipologias de producto con mayor venta.
 
@@ -112,11 +112,17 @@
 
 6. 🔚 Conclusiones.
 
-    - Análisis descriptivo númericos:
-    - Análisis categóricas:
-    - Análisis temporales:
-    - Análisis multifactorial:
-    - Análisis relacional:
+    - Análisis descriptivo númericos: Los numéricos estan formados por 5 campos, sin embargo 2 han resultado ser los mas relevantes, Antelación_pedido y Tiempo_preparacion_disponible. Antelacion_pedido muestra que el 90% de los pedidos se graban con una adelante a la fecha a la que se solicita igual o superior a 4 meses. Teniendo en cuenta que el tiempo estandar de produccion para los origenes con un mayor tiempo de producciones de 4 meses (1 mes de aprovisionamiento, 1 mes de produccion y 2 meses de transito), entonces este indicador nos dice que si el 10% restante se produce en origenes con menor lead time, estariamos 100% cubiertos para cumplir el servicio. Ademas, la media se situa en casi 6 meses (175 dias). El objetivo deberia ser subir este indicador por encima de los 180 dias, y que solo el 5% estuviera por debajo de los 4 meses, dando mas margen y tiempo de planificacion, mejorando la productividad y asegurando mas el servicio. Tiempo_preparacion_disponible indica que el 88% de los pedidos se entregan en almacen con un tiempo igual o superior a 2 dias para preparar y enviar a cliente. Esto deja el 12% de los registros fuera. Es un indicador a reducir, el maximo de pedidos tarde debe ser del 5%. El resto de campos muestran el tiempo promedio de entrega que vemos que es inferior (139) al promedio de antelacion de pedido, lo que quiere decir que hay mas tiempo medio en la antelacion de los pedidos que en la entrega de los mismos. Y por ultimo los pares por pedido, que nosmuestra un intervalo de entre 1 y 10 de pares por pedido, el promedio es 17 porque se ve afectado por los outliers.
+
+    - Análisis categóricas: En este apartado se muestra de forma sencilla la distribucion de cada uno de los campos que categorizan los datos. Se ve como el 85% de la venta se produce por fabricacion directa, que el fabricante con mayor volumen es X31B y el segundo M04P. Los anulados representan casi un 25%, un dato relevante pero cuando vemos los motivos vemos que casi el 80% es debido a una situacion habitual de anulacion de pedidos stock. Un tercio de las ventas son stock y el resto pedidos de clientes. España, Mexico y Estados Unidos representan mas del 70% de la venta. La distrubucion por genero muestra un predominancia de las ventas en señora y por categoria, los deportivos suponen la mayor venta en casi un 30%.
+
+    - Análisis temporales: La temporalidad esta fuertemente marcada, excluyendo la fechas de anulacion, se ve como los pedidos se graban en a penas 3 meses para las temporadas de invierno (febrero) y en alguno mas para las temporadas de verano (julio, agosto y septiembre), pero con picos muy marcados. En las fechas de servicio se sigue viendo epocas pico pero algo menos marcadas y ya las fecha de llegada y de expedicion se mantienen mas constantes durante el año, aunque tambien con ligeros epocas de valle.
+
+    - Análisis multifactorial: El analisis a pesar de haber visto que habian solo un 0,27% de anulaciones por llegar tarde, se ha querido centrar el foco en el servicio. Se puede observar como M04P es el proveedor con mayor incumplimiento, tanto en stock como en clientes, suponiendo mas de un 24% de toda la produccion que llega tarde. Es normal ver un valor mayor a mayor volumen de produccion, pero en este caso seria el segundo con mayor volumen y ademas siendo de los proveedores menor tiempo de entrega, ya no solo por datos que seria el tercero con menor tiempo de entrega, sino tambien por ser el proveedor con menor tiempo de transito, reduciendo tiempo y sobretodo posibles cuellos de botellas o problemas de aduana. esto muestra el punto clave donde trabajar.
+
+    - Análisis relacional: En este analisis se ha visto la relacion directa o inversa entre algunos campos, aportando lo que mas o menos ya se podia saber. Antelacion pedido con tiempo entrega y tiempo preparacion real con tiempo preparacion disponible muestran una relacion directa, cuanto mayor tiempo se dispone o para fabricar o para prepara, mas tiempo se termina utilizando. Pasa lo contrario entre tiempo entrega con tiempo preparacion tanto real como disponible, con una relacion inversa, cuanto mas tiempo consume la entrega menos se dispone para preparar.
+
+    - Conclusiones finales: 
 
 
 
