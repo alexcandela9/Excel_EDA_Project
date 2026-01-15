@@ -108,6 +108,7 @@
     SESIÓN 3:
 
     - Creación DashBoard.
+    - Revision Reglas de calidad.
 
 
 6. 🔚 Conclusiones.
@@ -122,7 +123,25 @@
 
     - Análisis relacional: En este analisis se ha visto la relacion directa o inversa entre algunos campos, aportando lo que mas o menos ya se podia saber. Antelacion pedido con tiempo entrega y tiempo preparacion real con tiempo preparacion disponible muestran una relacion directa, cuanto mayor tiempo se dispone o para fabricar o para prepara, mas tiempo se termina utilizando. Pasa lo contrario entre tiempo entrega con tiempo preparacion tanto real como disponible, con una relacion inversa, cuanto mas tiempo consume la entrega menos se dispone para preparar.
 
-    - Conclusiones finales: 
+Conclusiones finales: Como conclusión general podemos ver que el % de incumplimiento es de 11'5% y la empresa quiere establecer un objetivo de máximo del 5%.
+
+Analizando mas en detalle, el 11'5 tarde es sobre el total de pares ya entregados 4.335.780, por lo que hay 497.823 pares tarde y 3.837.957 entregados en fecha.
+
+Al filtrar por los 497.823 pares entregados tarde vemos que M04P el proveedor con mayor servicio tarde, 24'15% a pesar de ser el segundo proveedor con mayor volumen de ventas fabricado 18%. También se observa que la antelación de pedido baja aunque no es muy relevante y que el promedio de los partes tarde pasa a ser de 11 días tarde en su entrega.
+
+Dentro de lo que ha llegado tarde se puede observar que los pedidos de stock predominan sobre los de clientes en un 60%-40% aproximadamente, algo relevante ya que ante la decisión de elegir que llega tarde es preferible que llegue tarde el stock antes que los clientes.
+
+Si enfocamos solo en los 207.133 pares tarde de iniciales, vemos que de nuevo M04P es el primero con 30'4% y ahora por mayor volumen y mayor diferencia respecto al segundo. El resto de características se mantienen acorde al volumen.
+
+Al filtrar por los pedidos tarde de stock se observa que el tiempo de antelación de pedido si se ve reducido notablemente a 126 días, una posible causa del motivo del retraso.
+
+Proveedor a proveedor, viendo su incumplimiento respecto a sus respectivas producciones M04P supone un 14'4% siendo un valor intermedio a pesar de que como se ha visto en volumen absoluto es la que mas afecta. El peor proveedor en este caso seria Z12 con un 36'5% y el mejor X37 con un 6%.
+
+Por lo que, para mejorar el % de incumplimiento los puntos a enfocarse serian:
+
+ trabajar en aumentar la antelación de los pedidos sobre todo para el caso de los de stock. 
+Enfocarse en los peores proveedores con mayor % particular de incumplimiento.
+Enfocarse en M04P como proveedor que mas esta contribuyendo a traer pares tarde.
 
 
 
